@@ -28,3 +28,10 @@ files. We provided it with the location of the MUD and the players credentials.
 The agent struggled to connect to the MUD.
 The agent would attempt to create temporary code files to manage a telnet connection and execute commands.
 The agent did not have enough information about Text User Interface of the MUD to login and see its mistakes.
+
+
+## 2. Agent Skills driven by main agent eg. ~/.skills
+
+A very common way to drive specific functionality is via Agent skills which is an open format for agents adopted by many coding harnesses and agents SDKs.
+
+- execute blanket python scripts
