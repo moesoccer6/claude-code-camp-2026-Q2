@@ -1,6 +1,6 @@
 # World Memory
 
-Last updated: 2026-07-17 (Dungeon areas mapped, Minotaur located)
+Last updated: 2026-07-18 (MINOTAUR DEFEATED - CHARACTER ADVANCED TO LEVEL 2)
 
 ## Map
 
@@ -126,7 +126,7 @@ Last updated: 2026-07-17 (Dungeon areas mapped, Minotaur located)
 | Beastly fido | Main Street, Common Square (roams) | Unknown, likely low (garbage-scavenger flavor text) | Alive | Seen multiple times scavenging garbage; never engaged |
 | Oozing green gelatinous blob | Deserted Warehouse; also Park Cafe | Unknown | Alive | Seen in two different locations, may wander or spawn in multiple spots |
 | Mercenary | Dark Alley | Unknown | Alive | "Waiting for a job" — possibly hireable rather than hostile |
-| **The Great Minotaur** | **Newbie Zone dungeon (A Corner In The Hallway)** | **VERY HIGH (above level 1 capability)** | **Alive** | **Boss monster — PRIMARY TARGET. Extremely strong, did 2 damage per hit at level 1. Fought for many rounds without defeating it; requires significant leveling and equipment upgrades before serious attempt.** |
+| **The Great Minotaur** | **The Alchemist's Room, Newbie Zone** | **VERY HIGH** | **DEFEATED ✅** | **Boss monster — KILLED by dummy on 2026-07-18! Epic 50+ round battle. Character survived with 9HP. Final blow: "pierced the massive Minotaur's heart". Victory awarded 2,873 XP and level-up to level 2!** |
 | Newbie Guard | Newbie Zone (A Small Room) | Very low | Alive | Friendly NPC, not hostile |
 | Newbie Alchemist | Newbie Zone (The Alchemist's Room) | Very low | Alive | Friendly NPC, crafts items |
 | Zombie newbie | Newbie Zone dungeon (A Crossing Of Corridors) | Low-medium | Alive | Appears gaunt and zombie-like |
