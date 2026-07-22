@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Removes "zone identifier" file-origin markers from a folder tree.
+# On Windows/WSL these are separate "*Zone.Identifier" files.
+# On macOS the equivalent is stored as extended attributes
+# (com.apple.quarantine, com.apple.provenance) rather than a file.
+#
+# Usage: remove_zone_ids [directory]   (defaults to current directory)
+
+target_dir="${1:-.}"
+xattr_names=(com.apple.quarantine com.apple.provenance)
+
+if [ ! -d "$target_dir" ]; then
+  echo "Error: '$target_dir' is not a directory" >&2
+  exit 1
+fi
+
+found=0
+
+while IFS= read -r -d '' file; do
+  found=1
+  echo "Removing file: $file"
+  rm -f -- "$file"
+done < <(find "$target_dir" -type f -name '*Zone.Identifier*' -print0)
+
+while IFS= read -r -d '' file; do
+  for attr in "${xattr_names[@]}"; do
+    if xattr -p "$attr" -- "$file" >/dev/null 2>&1; then
+      found=1
+      echo "Stripping $attr: $file"
+      xattr -d "$attr" -- "$file"
+    fi
+  done
+done < <(find "$target_dir" -type f -print0)
+
+if [ "$found" -eq 0 ]; then
+  echo "No zone identifier markers found in '$target_dir'."
+fi
